@@ -23,7 +23,6 @@ RUN apk update && \
     nodejs \
     yarn \
     mariadb-dev \
+    openssl-dev \
     && rm -rf /root/.cache \
     && rm -rf /var/cache/apk/*
-
-RUN apk add --no-cache libssl-dev
