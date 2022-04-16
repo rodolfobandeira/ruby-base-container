@@ -24,7 +24,6 @@ RUN apk update && \
     nodejs \
     yarn \
     mariadb-dev \
-    openssl-dev \
     openssl-client \
     && rm -rf /root/.cache \
     && rm -rf /var/cache/apk/*
