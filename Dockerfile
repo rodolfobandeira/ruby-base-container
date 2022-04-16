@@ -16,7 +16,6 @@ RUN apk upgrade && apk add --update tzdata && \
 RUN apk update && \
     apk add --no-cache \
     build-base \
-    linux-headers \
     gcc \
     bash \
     cmake \
@@ -24,7 +23,7 @@ RUN apk update && \
     nodejs \
     yarn \
     mariadb-dev \
-    openssl-client \
     && rm -rf /root/.cache \
     && rm -rf /var/cache/apk/*
 
+RUN apk add --no-cache libssl-dev
