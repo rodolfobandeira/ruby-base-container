@@ -22,7 +22,7 @@ RUN apk update && \
     git \
     nodejs \
     yarn \
-    mariadb-dev \
+    postgresql-dev \
     openssl-dev \
     && rm -rf /root/.cache \
     && rm -rf /var/cache/apk/*
