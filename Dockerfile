@@ -23,6 +23,6 @@ RUN apk update && \
     nodejs \
     yarn \
     postgresql-dev \
+    openssl-dev \
     && rm -rf /root/.cache \
     && rm -rf /var/cache/apk/*
-
