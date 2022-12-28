@@ -1,11 +1,11 @@
-FROM ruby:2.7-alpine3.13 as base
+FROM ruby:2.7-alpine as base
 
 ENV NODE_ENV production
 ENV RAILS_ENV production
 ENV RAILS_SERVE_STATIC_FILES true
 ENV RAILS_LOG_TO_STDOUT true
 ENV APP_HOME=/app
-ENV BUNDLER_VERSION "2.3.8"
+ENV BUNDLER_VERSION "2.4.1"
 ENV PATH=$APP_HOME/bin:$PATH
 
 # Set local timezone
